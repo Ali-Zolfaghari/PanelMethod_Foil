@@ -8,7 +8,7 @@
 %*   References  : 
 %*   'Foundations of Aerodynamics: Bases of Aerodynamic Design',Fifth edition, John Wiley & Sons, Inc.
 %*   Kuethe, Arnold M. and Chow, Chuen-Yen.
-%*   'Theory of Wing Sections', Abbott, I.H. and Von Doenhoff, A.E.
+%*   'Theory of Wing Sections', Abbott, I.H. and Von Doenhoff, A.E. Dover, New York (1959). 
 %*   
 %***************************************************************************************************
 %*   Inputs      :
