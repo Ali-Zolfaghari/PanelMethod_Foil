@@ -1,3 +1,34 @@
+%***************************************************************************************************
+%*   Simulate Shock Tube, using FVM methods (Roe . Roe-Lax . Jamson) algorithm, by presented code.
+%*   I take no responsibilities for any errors in the code or damage thereby.
+%*   Please notify me at zolfaghari1992iut@gmail.com if the code is used in any type of application.
+%***************************************************************************************************
+%*   Developer   : Ali Zolfaghari Sichani (06-06-2015)
+%***************************************************************************************************
+%*   References  : 
+%*   An Introduction to Computational Fluid Dynamics: The Finite Volume Method 2nd Edition
+%*   by H. Versteeg (Author), W. Malalasekera (Author)
+%***************************************************************************************************
+%*   Euler equations  
+%*   Inputs      :
+%*   gamma       (ratio of specific heats    )
+%*   CFL         (Courant number             )
+%*   L           (length                     )
+%*   xd          (discontinuity position     )
+%*   FinalTime   (silmulation time           )
+%*   Outputs      :
+%*   all data export in MATLAB plot
+%***************************************************************************************************
+
+
+
+clear,clc
+close all
+format compact
+format long
+
+
+
 %|=====================================================================================|
 %|  The theory for this code is contained in the textbook 'Foundations of Aerodynamics:|
 %|  Bases of Aerodynamic Design',Fifth edition, Kuethe, Arnold M. and Chow, Chuen-Yen, |
