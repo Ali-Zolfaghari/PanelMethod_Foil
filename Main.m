@@ -1,23 +1,20 @@
 %***************************************************************************************************
-%*   Simulate Shock Tube, using FVM methods (Roe . Roe-Lax . Jamson) algorithm, by presented code.
+%*   Simulate pressure distribution on foil, using panel method (source and vortex), by presented code.
 %*   I take no responsibilities for any errors in the code or damage thereby.
 %*   Please notify me at zolfaghari1992iut@gmail.com if the code is used in any type of application.
 %***************************************************************************************************
-%*   Developer   : Ali Zolfaghari Sichani (06-06-2015)
+%*   Developer   : Ali Zolfaghari Sichani (06-05-2015)
 %***************************************************************************************************
 %*   References  : 
-%*   An Introduction to Computational Fluid Dynamics: The Finite Volume Method 2nd Edition
-%*   by H. Versteeg (Author), W. Malalasekera (Author)
+%*   'Foundations of Aerodynamics: Bases of Aerodynamic Design',Fifth edition, John Wiley & Sons, Inc.
+%*   Kuethe, Arnold M. and Chow, Chuen-Yen.
+%*   'Theory of Wing Sections', Abbott, I.H. and Von Doenhoff, A.E.
+%*   
 %***************************************************************************************************
-%*   Euler equations  
 %*   Inputs      :
-%*   gamma       (ratio of specific heats    )
-%*   CFL         (Courant number             )
-%*   L           (length                     )
-%*   xd          (discontinuity position     )
-%*   FinalTime   (silmulation time           )
+%*   get input when run the code
 %*   Outputs      :
-%*   all data export in MATLAB plot
+%*   all data export in Tecplot format
 %***************************************************************************************************
 
 
@@ -28,20 +25,6 @@ format compact
 format long
 
 
-
-%|=====================================================================================|
-%|  The theory for this code is contained in the textbook 'Foundations of Aerodynamics:|
-%|  Bases of Aerodynamic Design',Fifth edition, Kuethe, Arnold M. and Chow, Chuen-Yen, |
-%|                   John Wiley & Sons, Inc., Canada, 1998.                            |
-%|  Generates points for NACA four digit wings uses equations found in two references  |
-%|  Abbott, I.H. and Von Doenhoff, A.E.:'Theory of Wing Sections', Dover Publications  |
-%|  Inc., 1981.Ladson, C.L., Brooks, C.W. Jr., Hill, A.S. and Sproles, D.W.,'Computer  |
-%|       Program to Obtain Ordinates for NACA Airfoils'.  NASA TM-4741, 1996.          |
-%|=====================================================================================|
-
-
-clear
-clc
 
 %   Get input of airfoil
 %   The profile specified is a four-digit unmodified NACA airfoil.
