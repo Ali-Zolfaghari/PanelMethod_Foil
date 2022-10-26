@@ -1,4 +1,4 @@
-# PanelMethod_PressureDistribution_Foil
+# PanelMethod_PressureDistribution
 The panel method is an analysis method that can be used to arrive at an approximate solution for the forces acting on an object in a flow. 
 The panel method is basically a numerical approximation that relies on using discrete elements on the surface of an object and then prescribing a flow element (in this code uses vortex and source/sink) on each element that will satisfy certain boundary conditions (like no flow crosses the surface of the object). The interaction of the elements are accounted for and must also satisfy the condition that far from the object the flow should be equal to the free stream velocity approaching the object. There are a number of books and papers written that describe the method in very general terms and even the inclusion of viscous forces to some degree. But here we are just introducing the method to get a feel for its usefulness in external flows, so we will use a simply geometry with a simply distribution of flow elements. More complicated models exist but they all are based on the simplified form presented here.
 
