@@ -5,12 +5,6 @@
 %***************************************************************************************************
 %*   Developer   : Ali Zolfaghari Sichani (06-05-2015)
 %***************************************************************************************************
-%*   References  : 
-%*   'Foundations of Aerodynamics: Bases of Aerodynamic Design',Fifth edition, John Wiley & Sons, Inc.
-%*   Kuethe, Arnold M. and Chow, Chuen-Yen.
-%*   'Theory of Wing Sections', Abbott, I.H. and Von Doenhoff, A.E. Dover, New York (1959). 
-%*   
-%***************************************************************************************************
 %*   Inputs      :
 %*   get input when run the code
 %*   Outputs      :
@@ -26,9 +20,7 @@ format long
 
 
 
-%   Get input of airfoil
-%   The profile specified is a four-digit unmodified NACA airfoil.
-%   Automatically generate points on the contour of the corresponding NACA airfoil.
+%   Get input of body
 %   The non-dimensional velocity parallel to each panel (v/vinf) 
 check=0;
 tot=0;
@@ -94,7 +86,7 @@ while(inchck==0)
     end
 end
 
-%   Genarate airfoil coordinates
+%   Genarate body coordinates
 if dn==4;
     m=naca(1)/100;
     p=naca(2)/10;
@@ -236,8 +228,8 @@ end
 
 XR=x;YR=y;
 
-%   x  = airfoil x-location (control panel )
-%   y  = airfoil y-location (control panel )
+%   x  = body x-location (control panel )
+%   y  = body y-location (control panel )
 %   xc = control point x-location (control point)
 %   yc = control point y-location (control point)
 
@@ -339,7 +331,7 @@ end
 %	Calculate s , t , rhs
 %   t  = angle of panel relative to horizontal (in radians)
 %   vd = non-dimensional (v/vinf) velocity parallel to panel
-%   cp =pressure coefficient at panel
+%   cp = pressure coefficient at panel
 for i=1:Ne 
     s(i)=((x(i+1)-x(i))^2+(y(i+1)-y(i))^2)^(0.5);
     t(i)=atan2((y(i+1)-y(i)),(x(i+1)-x(i)));
