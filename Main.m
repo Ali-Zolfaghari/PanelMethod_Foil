@@ -1,5 +1,5 @@
 %***************************************************************************************************
-%*   Simulate pressure distribution on foil, using panel method (source and vortex), by presented code.
+%*   Simulate pressure distribution of body, using panel method (source and vortex), by presented code.
 %*   I take no responsibilities for any errors in the code or damage thereby.
 %*   Please notify me at zolfaghari1992iut@gmail.com if the code is used in any type of application.
 %***************************************************************************************************
